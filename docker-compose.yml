@@ -42,7 +42,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: ghcr.io/savdmipracticum/film-frontend:latest
+    image: ghcr.io/wakrpracticum/film-backend:latest
     container_name: film-frontend
     volumes:
       - frontend:/app/dist
@@ -57,7 +57,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    image: ghcr.io/savdmipracticum/film-backend:latest
+    image: ghcr.io/wakrpracticum/film-backend:latest
     container_name: film-backend
     restart: unless-stopped
     env_file:
@@ -84,7 +84,7 @@ services:
     build:
       context: ./nginx
       dockerfile: Dockerfile
-    image: ghcr.io/savdmipracticum/film-nginx:latest
+    image: ghcr.io/wakrpracticum/film-backend:latest
     container_name: film-nginx
     restart: unless-stopped
     ports:
