@@ -39,7 +39,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: ghcr.io/wakrpracticum/film-frontend:latest
+    image: ghcr.io/wakr93/film-frontend:latest
     container_name: film-frontend
     volumes:
       - frontend:/app/dist
@@ -51,7 +51,7 @@ services:
         condition: service_healthy
       
   backend:
-    image: ghcr.io/wakrpracticum/film-backend:latest
+    image: ghcr.io/wakr93/film-backend:latest
     container_name: film-backend
     restart: unless-stopped
     env_file:
@@ -75,7 +75,7 @@ services:
       start_period: 40s
       
   nginx:
-    image: ghcr.io/wakrpracticum/film-nginx:latest
+    image: ghcr.io/wakr93/film-nginx:latest
     container_name: film-nginx
     restart: unless-stopped
     ports:
