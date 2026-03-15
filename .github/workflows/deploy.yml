@@ -60,7 +60,7 @@ jobs:
           tags: |
             ghcr.io/${{ env.OWNER }}/film-nginx:latest
             ghcr.io/${{ env.OWNER }}/film-nginx:${{ github.sha }}
-            
+
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
         with:
