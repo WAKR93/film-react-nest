@@ -1,5 +1,9 @@
 # FILM!
 
+## Ссылка на проект
+
+http://filmlist.practicum.nomorepartiessite.ru/
+
 ## Установка
 
 ### MongoDB
