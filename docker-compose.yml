@@ -55,7 +55,7 @@ services:
     container_name: film-backend
     restart: unless-stopped
     env_file:
-      - ./backend/.env
+      - ./.env
     networks:
       - app-network
     ports:
