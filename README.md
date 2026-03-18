@@ -2,7 +2,7 @@
 
 ## Ссылка на проект
 
-http://savdmipracticum.nomorepartiessite.ru/
+http://filmlist.practicum.nomorepartiessite.ru/
 
 ## Установка
 
